@@ -95,7 +95,7 @@ with st.sidebar:
 st.title("KRX 종목 분석 대시보드")
 st.caption(f"{my_name}")
 
-input_comp = st.text_input('종목명을 입력하세요', value=st.session_state.search_input_val)
+input_comp = st.text_input('종목 명을 입력하세요', value=st.session_state.search_input_val)
 
 d2 = datetime.datetime.now()
 selected_dates = st.date_input(
