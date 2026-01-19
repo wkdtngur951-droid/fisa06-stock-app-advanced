@@ -175,7 +175,7 @@ if st.session_state.active_company:
                         break
                 
                 center = SIDO_COORDS.get(matched_key, [36.5, 127.5])
-                zoom = 10 if matched_key else 7
+                zoom = 8 if matched_key else 7
                 
                 m = folium.Map(location=center, zoom_start=zoom, tiles="cartodbpositron")
                 folium.GeoJson(load_geo(), style_function=lambda x: {
