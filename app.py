@@ -161,7 +161,7 @@ if st.session_state.active_company:
                 ), row=2, col=1)
 
                 fig.update_layout(
-                    template='plotly_white', xaxis_rangeslider_visible=False,
+                    template='plotly_dark', xaxis_rangeslider_visible=False,
                     margin=dict(l=10, r=10, t=10, b=10), height=500, showlegend=False
                 )
                 st.plotly_chart(fig, use_container_width=True)
