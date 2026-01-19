@@ -188,7 +188,7 @@ if st.session_state.active_company:
                         popup=f"<b>{target_name}</b>", 
                         icon=folium.Icon(color='red', icon='university', prefix='fa')
                     ).add_to(m)
-                    st.success(f"{matched_key} 위치를 지도의 중심으로 설정했습니다.")
+                    st.success(f"본사는 {matched_key}에 위치해 있습니다.")
                 
                 st_folium(m, width=725, height=400, key=f"map_{target_name}")
 
