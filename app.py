@@ -179,7 +179,7 @@ if st.session_state.active_company:
                 center = SIDO_COORDS.get(matched_key, [36.5, 127.5])
                 zoom = 8 if matched_key else 7
                 
-                m = folium.Map(location=center, zoom_start=zoom, tiles="cartodbpositron")
+                m = folium.Map(location=center, zoom_start=zoom, tiles="CartoDB dark_matter")
                 folium.GeoJson(load_geo(), style_function=lambda x: {
                     'fillColor': '#f1f1f1', 'fillOpacity': 0.1, 'color': 'gray', 'weight': 1
                 }).add_to(m)
