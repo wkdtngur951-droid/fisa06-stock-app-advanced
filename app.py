@@ -48,7 +48,7 @@ NAME_REPLACEMENTS = {
     "강원": "강원특별자치도", "강원도": "강원특별자치도",
     "경기": "경기도", "서울": "서울특별시", "경남": "경상남도",
     "경북": "경상북도", "충남": "충청남도", "충북": "충청북도",
-    "전남": "전라남도", "제주": "제주특별자치도"
+    "전남": "전라남도", "제주": "제주특별자치도", "세종":"세종특별자치시"
 }
 
 # --- 2. 세션 상태 초기화 ---
@@ -95,7 +95,7 @@ with st.sidebar:
 st.title("KRX 종목 분석 대시보드")
 st.caption(f"{my_name}")
 
-input_comp = st.text_input('회사명을 입력하세요', value=st.session_state.search_input_val)
+input_comp = st.text_input('종목명을 입력하세요', value=st.session_state.search_input_val)
 
 d2 = datetime.datetime.now()
 selected_dates = st.date_input(
